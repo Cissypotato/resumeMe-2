@@ -25,21 +25,14 @@
     </style>
 </head>
 <body>
-    
-    <!-- banner -->
-    <section class="banner">
-        <div class="mask">
-                <P class="logo"><span class="rs">R</span><span class="card">esume</span></P>
-                <!-- <div class="circle"></div>
-                <div class="circle small"></div> -->
-                
-        </div>
-    </section>
-
-
-
     <!-- about -->
     <main id="aboutSide">
+        <section class="banner">
+                <div class="mask">
+                        <P class="logo"><span class="rs">R</span><span class="card">esume</span></P>
+                        
+                </div>
+            </section>
         <div class="userCard ">
             <!-- <p class="aboutMe">ABOUT ME</p> -->
             <div class="picAndtxt">
@@ -69,16 +62,6 @@
                                              
                     </dl>
                 </div>
-                
-               
-               
-               
-                <!-- <div class="rightIntroduction">
-                    <dl>
-                        
-                    </dl>
-                </div> -->
-
                 <div class="avatarWrapper">
                         <div class="avatar">
                         </div>
@@ -86,47 +69,31 @@
                             <a class="downloadResume" href="./resume.pdf" target="_blank" download>下 载 PDF 文 档</a>
                         </p>
                 </div>
-                
-
-            </div>
-            <!-- <div>
-                
-                <p class="selfIntroduction">
-                    Cissy  前端工程师<br>
-                    技能：前端开发，HTML5，CSS，JavaScript，JQuery，Vue，React，HTTP<br>
-                    院子里有两棵树，一棵是枣树，另一棵也是枣树。
-                </p>
-            </div> -->
-            <div class="footer">
-        
-                    <!-- <a href="https://github.com/Cissypotato" target="_blank">
-                            <svg class="icon" aria-hidden="true">
-                                    <use xlink:href="#icon-github"></use>
-                            </svg> 
-                    </a> -->
-                    
-                    <ul class="nav" id='headerNav'>
-                            <li><a href="#aboutSide">关于</a></li>
-                            <li><a href="#skillsSide">技能</a></li>
-                            <li>
-                                <a href="#portfolioSide">作品</a>
-                            </li>
-                            <li>
-                                <a href="#message">留言</a>
-                            </li>                 
-                            <!-- <li><a href="educationExerience">教育经历</a></li>
-                            <li><a href="occupationHistory">工作经历</a></li> -->
-                            <li>
-                                <a href="http://www.lofter.com/blog/cissy487" target="_blank" >博客</a>
-                            </li>
-                            <li>
-                                <a href="http://www.lofter.com/blog/cissy487" target="_blank" >github</a>
-                            </li>
-                        </ul>
             </div>
         </div>
-        
     </main>
+
+<!--nav-->
+    <nav>
+        <div class="footer">       
+            <ul class="nav" id='headerNav'>
+                <li><a href="#aboutSide">关于</a></li>
+                <li><a href="#skillsSide">技能</a></li>
+                <li>
+                    <a href="#portfolioSide">作品</a>
+                </li>
+                <li>
+                    <a href="#message">留言</a>
+                </li>                 
+                <li>
+                    <a href="http://www.lofter.com/blog/cissy487" target="_blank" >博客</a>
+                </li>
+                <li>
+                    <a href="http://www.lofter.com/blog/cissy487" target="_blank" >github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 
@@ -206,11 +173,11 @@
         <h2>留言</h2>
         <ol id="messageList"></ol>
         <form action="" id="postMessageForm" style="width:700px;margin:50px auto;">
-            <label for="">姓名：</label>
-            <input type="text"name="name" >
-            <label for="">留言：</label>
-            <input type="text"name="content" >
-            <button type="submit">提交</button>
+            <label>姓名：</label>
+            <input type="text"name="name" class="name">
+            <label>留言：</label>
+            <input type="text"name="content"  class="content">
+            <button type="submit" class="submit">提交</button>
         </form>
     </section>
      <!-- footer -->
@@ -223,8 +190,8 @@
     <script src="//cdn1.lncld.net/static/js/3.6.8/av-min.js"></script>
 
     <!--模块化-->
-    <script src="scripts/swiper.js"></script>
-    <script src="scripts/auto-slide-up.js"></script>
+    <!-- <script src="scripts/swiper.js"></script> -->
+    <!-- <script src="scripts/auto-slide-up.js"></script> -->
     <script src="scripts/sticky-topbar.js"></script>
     <!-- <script src="scripts/smoothly-navigation.js"></script> -->
     <script src="scripts/message.js"></script>

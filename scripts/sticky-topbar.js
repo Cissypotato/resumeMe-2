@@ -1,6 +1,6 @@
 
 !function(){
-    var view=document.querySelector('#headerNav')
+    var view=document.querySelector('nav')
     var controller={
         view:null,
         init:function(view){
@@ -10,19 +10,15 @@
         bindEvents:function(){
             this.view=view
             window.addEventListener('scroll',(x)=>{
-                if(scrollY>0){
-                    this.active()
+                if(scrollY>532){
+                    view.classList.add('sticky');
+                    view.querySelector('.footer').style.boxShadow='none';
                 }else{
-                   this.deactive()
+                    view.classList.remove('sticky');
+                    view.querySelector('.footer').style.boxShadow=' 0px 3px 5px 0px rgba(0,0,0,0.3)';
                 }
             })
         },
-        active:function(){
-            header.classList.add('sticky');
-        },
-        deactive:function(){
-            header.classList.remove('sticky');
-        }
     }
     controller.init(view) 
 
