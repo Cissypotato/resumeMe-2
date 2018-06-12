@@ -18,22 +18,24 @@ img{width: 100%}/*防止图片超出父元素*/
 
 /**** banner ****/
 
-
-
-
-
-/* about */
-main{transition: all 0.3s}
-
-section.banner{background: url(../images/banner-11.jpg);height: 500px;background-position: center center;background-size: cover;}
-section.banner .mask{height: 100%;background: rgba(0,0, 0,0.7)}
+section.banner{background: url(../images/banner-11.jpg);height: 500px;background-position: center center;
+    background-size: cover;position: relative}
+section.banner .mask{height: 100%;background: rgba(0,0, 0,0.7);}
 .logo{float: left;font-family:"Arial Black";margin: 20px;}
 .logo .rs{font-size: 24px;padding-right: 5px;color:#84a3eb;}
 .logo .card{font-size: 24px;color:#bbb;}
 
 
+
+/* about */
+main{transition: all 0.3s;position: relative}
+
+
+
+
 .userCard{width: 940px;background: #fff;margin: 0 auto;box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-    margin-top: -360PX;}
+    margin-top: -340px;}
+    /*position: absolute;top:150px;left: 0;right: 0;bottom: -50px;margin: auto;*/
 .userCard>.aboutMe{text-align: center;font-size:40px;font-weight: 800;line-height: 70px;}
 .userCard .picAndtxt{padding: 50px;display: flex;justify-content: center;}
 .picAndtxt>.leftIntroduction {width: 60%;font-size: 16px;flex-grow: 1;}
@@ -45,8 +47,8 @@ section.banner .mask{height: 100%;background: rgba(0,0, 0,0.7)}
 
 .leftIntroduction dl dt.splitLine{width: 93%;border-top: 1px solid gray;margin-top: 20px;}
 .leftIntroduction dl dd.education{width: 80%}
-.leftIntroduction dl dd.occupation{width: 80%}
-span.time{margin-right: 16px}
+.leftIntroduction dl dd.occupation{width: 80%;}
+span.time{margin-right: 16px;}
 
 .lineSplit{border-left: 1px solid #4d608b;border-right: 1px solid #4d608b;margin-left: 20px;margin-right: 20px;width: 5px;}
 
@@ -60,7 +62,7 @@ span.time{margin-right: 16px}
 
 
 /*nav*/
-nav{transition: all 0.3s}
+nav{transition: all 0.5s}
 nav.sticky{position: fixed;width: 100%;top:0;left:0;background:#4d608b;box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3); }
 .footer{background:#4d608b;text-align: center;width: 940px;margin-left: auto;margin-right: auto;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);}
@@ -101,10 +103,10 @@ section.skills,.portfolio,.message{max-width: 940px;margin-left: auto;margin-rig
 
 
 /*message*/
-.message{margin-bottom: 200px}
+.message{margin-bottom: 100px}
 .message>h2{text-align: center;color: #3d4451;font-size: 34px;font-weight: 300;}
-.message>ol{max-width: 800px;margin: 0 auto;border-top: 1px solid #ddd;}
-.message>ol>li{padding: 16px;border-bottom: 1px solid #ddd;}
+.message>ol{max-width: 800px;margin: 0 auto;}
+.message>ol>li{padding-top: 16px;padding-bottom: 3px;padding-left: 16px;;border-bottom: 1px solid #ddd;color: #666}
 input.name{background: none;border: none;border-bottom: 1px solid #999;margin-right: 100px;}
 input.name:focus{outline: none;background-color: none;}
 input.content{background: none;border: none;border-bottom: 1px solid #999;margin-right: 100px;}
@@ -114,3 +116,66 @@ button.submit{color: #ddd;background: #4d608b;border: none;padding: 4px 8px;curs
 
 /*footer*/
 footer>p{text-align: center;color: gray;margin: 20px;font-size: 14px;}
+
+
+
+
+/* ---- reset ---- */
+
+body {
+    margin: 0;
+    font:normal  Arial, Helvetica, sans-serif;
+  }
+  
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }

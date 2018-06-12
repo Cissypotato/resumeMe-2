@@ -10,6 +10,10 @@
         },
         fetch:function(){
             var query = new AV.Query('Message');
+            var now=new Date()
+            query.lessThanOrEqualTo('createdAt', now);//查询今天之前创建的 Todo
+            query.limit(8);
+            query.descending('createdAt');
             return query.find()//promise对象
         },
         //创建数据

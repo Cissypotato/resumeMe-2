@@ -10,7 +10,7 @@
         bindEvents:function(){
             this.view=view
             window.addEventListener('scroll',(x)=>{
-                if(scrollY>532){
+                if(scrollY>533){
                     view.classList.add('sticky');
                     view.querySelector('.footer').style.boxShadow='none';
                 }else{
